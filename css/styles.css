@@ -15,7 +15,6 @@
 body {
   background-color: hsl(250, 17%, 14%);
   background-image: url("/images/bg-stars.svg");
-  height: 100%;
 }
 
 h1 {
@@ -50,7 +49,6 @@ h1 {
   padding-bottom: 0.4em;
   padding-top: 18px;
   overflow: hidden;
-  width: 100%;
 }
 @media (min-width: 1440px) {
   .top,
@@ -135,7 +133,7 @@ h1 {
 
 .segment-title {
   font-size: 10px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   letter-spacing: 0.4em;
   color: hsl(237, 18%, 59%);
 }
@@ -151,7 +149,6 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   transition: 0.5s ease;
 }

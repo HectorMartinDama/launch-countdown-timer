@@ -1,3 +1,4 @@
+@use 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 
 
@@ -8,21 +9,21 @@
   font-weight: 700;
   margin: 0;
   padding: 0;
-  @media (min-width: 1440px){
+
+  @media (min-width: 1440px) {
     font-size: 60px;
   }
 }
 
 
 body {
-  background-color: hsl(250, 17%, 14%);
+  background-color: variables.$background-color;
   background-image: url("/images/bg-stars.svg");
-  height: 100%;
 }
 
 
 h1 {
-  color: hsl(0, 0%, 100%);
+  color: variables.$white;
   font-size: 20px;
   letter-spacing: .4em;
   padding-bottom: 100px;
@@ -35,10 +36,11 @@ h1 {
   flex-direction: column;
   box-shadow: 0 10px 0 0 hsl(240, 13%, 12%);
   border-radius: .1em;
-  color: hsl(345, 95%, 68%);
+  color: variables.$softRed;
   text-align: center;
   width: 75px;
-  @media (min-width: 1440px){
+
+  @media (min-width: 1440px) {
     width: 150px;
   }
 }
@@ -52,21 +54,18 @@ h1 {
   padding-bottom: .4em;
   padding-top: 18px;
   overflow: hidden;
-  width: 100%;
-  
 
-  @media (min-width: 1440px){
+  @media (min-width: 1440px) {
     height: .15em;
     line-height: 1.3;
     padding-bottom: .4em;
     padding-top: 35px;
   }
-
 }
 
 .top,
 .countdown .top-flip {
-  background-color: hsl(240, 21%, 22%);
+  background-color: variables.$countTopColor;
   border-top-right-radius: .1em;
   border-top-left-radius: .1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -75,7 +74,7 @@ h1 {
 
 .bottom,
 .countdown .bottom-flip {
-  background-color: hsl(235, 19%, 25%);
+  background-color: variables.$countBottomColor;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -111,7 +110,6 @@ h1 {
   }
 }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -120,7 +118,6 @@ h1 {
   flex-direction: column;
 
 }
-
 
 .prueba {
   display: flex;
@@ -141,10 +138,11 @@ h1 {
 
 .segment-title {
   font-size: 10px;
-  color: white;
+  color: variables.$white;
   letter-spacing: .4em;
-  color: hsl(237, 18%, 59%);
-  @media (min-width: 1440px){
+  color: variables.$grayishBlue;
+
+  @media (min-width: 1440px) {
     font-size: 14px;
   }
 }
@@ -155,17 +153,8 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-
-
-
   transition: .5s ease;
-
-
-
-
-
 
   .icons {
     position: absolute;
